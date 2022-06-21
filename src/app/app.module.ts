@@ -4,15 +4,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyTasksComponent } from './my-tasks/my-tasks.component';
-import { IgxBadgeModule, IgxListModule, IgxIconModule, IgxButtonModule, IgxRippleModule, IgxAvatarModule, IgxCalendarModule, IgxCardModule, IgxToggleModule, IgxDropDownModule, IgxNavigationDrawerModule } from 'igniteui-angular';
+import { IgxBadgeModule, IgxListModule, IgxIconModule, IgxButtonModule, IgxRippleModule, IgxAvatarModule, IgxCalendarModule, IgxCardModule, IgxGridModule, IgxToggleModule, IgxDropDownModule, IgxNavigationDrawerModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
 import { DashboardsComponent } from './dashboards/dashboards.component';
+import { ChildViewComponent } from './child-view/child-view.component';
+import { IgxCategoryChartModule } from 'igniteui-angular-charts';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyTasksComponent,
-    DashboardsComponent
+    DashboardsComponent,
+    ChildViewComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,8 @@ import { DashboardsComponent } from './dashboards/dashboards.component';
     IgxCalendarModule,
     FormsModule,
     IgxCardModule,
+    IgxGridModule,
+    IgxCategoryChartModule,
     IgxToggleModule,
     IgxDropDownModule,
     IgxNavigationDrawerModule

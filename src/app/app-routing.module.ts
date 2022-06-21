@@ -6,12 +6,14 @@ import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.com
 import { ErrorRoutingModule } from './error-routing/error-routing.module';
 import { MyTasksComponent } from './my-tasks/my-tasks.component';
 import { DashboardsComponent } from './dashboards/dashboards.component';
+import { ChildViewComponent } from './child-view/child-view.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'my-tasks', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
   { path: 'my-tasks', component: MyTasksComponent, data: { text: 'My Tasks' } },
   { path: 'dashboards', component: DashboardsComponent, data: { text: 'Dashboards' } },
+  { path: 'child-view', component: ChildViewComponent, data: { text: 'Child View' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 
